@@ -19,9 +19,9 @@ html{scroll-behavior:smooth;}
 body{font-family:'Barlow',sans-serif;background:var(--white);color:var(--text);}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;background:var(--white);border-bottom:1px solid var(--border);box-shadow:0 2px 12px rgba(26,46,74,.08);display:flex;align-items:center;justify-content:space-between;padding:0 4rem;height:150px;}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:var(--white);border-bottom:1px solid var(--border);box-shadow:0 2px 12px rgba(26,46,74,.08);display:flex;align-items:center;justify-content:space-between;padding:0 4rem;height:74px;}
 .nav-brand{display:flex;align-items:center;}
-.nav-logo{height:138px;object-fit:contain;}
+.nav-logo{height:46px;object-fit:contain;}
 .nav-links{display:flex;gap:2.5rem;list-style:none;}
 .nav-links a{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);text-decoration:none;position:relative;padding-bottom:4px;transition:color .2s;}
 .nav-links a::after{content:"";position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--navy);transition:width .3s;}
@@ -31,7 +31,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:var(--white);bord
 .nav-cta{background:var(--navy);color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;padding:.6rem 1.6rem;text-decoration:none;border:2px solid var(--navy);transition:background .2s,color .2s;}
 .nav-cta:hover{background:transparent;color:var(--navy);}
 .hamburger{display:none;background:none;border:none;font-size:1.5rem;color:var(--navy);cursor:pointer;padding:.3rem;}
-.mobile-menu{display:none;position:fixed;top:150px;left:0;right:0;background:var(--white);border-bottom:2px solid var(--navy);z-index:199;flex-direction:column;padding:1rem 0;box-shadow:0 4px 12px rgba(26,46,74,.1);}
+.mobile-menu{display:none;position:fixed;top:74px;left:0;right:0;background:var(--white);border-bottom:2px solid var(--navy);z-index:199;flex-direction:column;padding:1rem 0;box-shadow:0 4px 12px rgba(26,46,74,.1);}
 .mobile-menu.open{display:flex;}
 .mobile-menu a{padding:.9rem 2rem;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:1rem;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);text-decoration:none;border-bottom:1px solid var(--border);}
 .mobile-menu a:last-child{border-bottom:none;}
@@ -61,7 +61,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:var(--white);bord
 /* FOOTER */
 footer{background:var(--navy);padding:4rem 5rem 0;}
 .footer-inner{display:grid;grid-template-columns:2fr 1fr 1.2fr 1.4fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.1);}
-.footer-logo{height:126px;object-fit:contain;margin-bottom:1rem;}
+.footer-logo{height:42px;object-fit:contain;margin-bottom:1rem;}
 .footer-tagline{font-family:'Barlow Condensed',sans-serif;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);line-height:1.6;}
 .footer-col h4{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:1.2rem;}
 .footer-col ul{list-style:none;} .footer-col li{margin-bottom:.6rem;}
@@ -77,7 +77,7 @@ footer{background:var(--navy);padding:4rem 5rem 0;}
 
 /* MOBILE */
 @media(max-width:960px){
-  nav{padding:0 1.5rem;height:150px;}
+  nav{padding:0 1.5rem;}
   .nav-links,.nav-cta{display:none;}
   .hamburger{display:block;}
   .section{padding:4rem 1.5rem;}
@@ -90,7 +90,7 @@ footer{background:var(--navy);padding:4rem 5rem 0;}
 }
 
 /* HOME */
-.hero{min-height:100vh;background:var(--navy);position:relative;overflow:hidden;display:flex;align-items:center;padding-top:150px;}
+.hero{min-height:100vh;background:var(--navy);position:relative;overflow:hidden;display:flex;align-items:center;padding-top:74px;}
 .hero-bg{position:absolute;right:0;top:0;bottom:0;width:58%;height:100%;object-fit:cover;opacity:.22;}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(100deg,var(--navy) 44%,transparent 72%);}
 .hero-stripe{position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,var(--steel) 0%,rgba(74,100,128,.2) 100%);}
@@ -133,7 +133,7 @@ footer{background:var(--navy);padding:4rem 5rem 0;}
 .why-item h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;letter-spacing:.1em;text-transform:uppercase;color:var(--white);margin-bottom:.6rem;}
 .why-item p{font-size:.87rem;color:rgba(255,255,255,.45);line-height:1.65;}
 @media(max-width:960px){
-  .hero-content{padding:0 1.5rem;height:150px;}
+  .hero-content{padding:0 1.5rem;}
   .stats-row{grid-template-columns:repeat(2,1fr);}
   .adv-grid{grid-template-columns:repeat(2,1fr);}
   .svc-grid{grid-template-columns:1fr 1fr;}
@@ -260,10 +260,10 @@ footer{background:var(--navy);padding:4rem 5rem 0;}
     </div>
     <div class="footer-col footer-contact">
       <h4>Contact Us</h4>
-      <p>📍 12/246, Kangarappady<br>Kalamassery, Kerala – 682021</p>
+      <p>📍 Infinity Logistix<br>10/199H, Koodath Plaza 3<br>HMT Colony, Kalamassery<br>Kochi – 683503</p>
       <p>🌍 Based in Kochi, Kerala</p>
-      <p>📞 <a href="tel:+917592099099">75920 99099</a></p>
-      <p>✉️ <a href="mailto:fleet@infinitylogistix.co">fleet@infinitylogistix.co</a></p>
+      <p>📞 <a href="tel:+919746419099">97464 19099</a><br><a href="tel:+917592099099">75920 99099</a></p>
+      <p>✉️ <a href="mailto:admin@infinitylogistix.co">admin@infinitylogistix.co</a></p>
     </div>
   </div>
   <div class="footer-bottom">
